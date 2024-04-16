@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <!-- Other head elements -->
+    <style>
+      td:hover {
+        background-color: #555151;
+      }
+    </style>
+  </head>
+<!--
+
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Unintentional
+Threat Motivation: Curiosity Threat Impact: Unauthorized access to sensitive data as personal data of visitors, potential data breach
+Threat Mitigation: Implement strict access controls, provide regular training to employees about the importance of data security, regularly monitor and audit system logs.
+
+-->
+
+
+   <!-- The title of the page is defined here -->
+    <title>Hoop Society</title>
+    <!-- The CSS file for the page is linked here -->
+    <link rel='stylesheet' href='css/main.css'>
+</head>
+<nav>
+  <ul>
+    
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="img_gallery.html">Gallery</a></li>
+     <li><a href="current_members.html">Members</a></li>
+      <li><a href="event_calendar.html">Events</a></li>
+       <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="resourses.html">Resourses</a></li>
+         <li><a href="recommendations.html">Recommendations</a></li>
+  </ul>
+</nav>
+<body>
+    <!-- table rows and cells -->
+  </table>
+  <style>
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+    th, td {
+        width: 12.5%;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 5px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+    <header>
+
+ <!-- A table that displays the event calendar -->
+        <table>
+          
+            <thead>
+              
+              <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+
+            </thead>
+            <tbody> 
+              <!-- More rows for each week of events -->
+              <tr style="border-bottom: px solid hsl(0, 0%, 0%);">
+              </tr>
+                <th>W1</th>
+                <td>Open Gym Night (Online)</td>
+                <td>3v3 Tournament (In-person)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W2</th>
+                <td></td>
+                <td style="width: 10px;">Skills Clinic (Online)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="border-top: px solid rgb(182, 157, 157);">Open Gym Night (In-person)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W4</th>
+                <td>Guest Speaker (Online)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3v3 Tournament (Online)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W6</th>
+                <td>Open Gym Night (In-person)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W7</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Skills Clinic (In-person)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Guest Speaker (Online)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W9</th>
+                <td>Open Gym Night (Online)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>W10</th>
+                <td colspan="7">Society is on break for Easter</td>
+              </tr>
+              <tr>
+                <th>W11</th>
+                <td colspan="7">Society is on exams break</td>
+              </tr>
+              <tr>
+                <th>W12</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Skills Clinic (In-person)</td>
+                <td>Open Gym Night (In-person)</td>
+              </tr>
+            </tbody>
+          </table>
+          <main>
+            <!--Event visiting form -->
+            <div class="event-form">
+              <p>Want to visit an event? Tell us below!</p>
+              <form id="event-form">
+                <label for="event_title">Event Title:</label>
+                <input type="text" name="event_title" id="event_title" placeholder="Enter event title">
+                <br>
+                <label for="event_date">Event Date:</label>
+                <input type="date" name="event_date" id="event_date">
+                <br>
+                <button type="submit" onclick="submit_event()">Submit Event</button>
+              </form>
+            </div>
+            
+            <script>
+            function submit_event() {
+               // Get the value of the input field with the id 'event_title'
+              var title = document.getElementById("event_title").value;
+               // Get the value of the input field with the id 'event_date'
+              var date = document.getElementById("event_date").value;
+              if (title == "") {
+                // If it is, show an alert message
+                alert("An event must have a title!");
+              } else {
+                  // If the title is not empty, check if the date is empty
+                if (date.length == 0) {
+                  // If it is, show an alert message
+                  alert("An event must have a date!");
+                } else {
+                   // If both title and date are not empty, show a success message
+                  alert("Event submitted! The society will contact you soon!");
+                }
+              }
+            }
+            </script>
+            <footer>
+              <p>Copyright Artem Rokhman 2024</p>
+            </footer>
+          </main>
+        </body>
+        </html>

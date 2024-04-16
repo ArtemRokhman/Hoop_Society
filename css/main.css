@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Your Font Name";
+  src: url("path/to/your-font-file.woff2") format("woff2"),
+       url("path/to/your-font-file.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-color: #181515;
+  --reading-background-color: #ec7b10ef;
+  --accent-color: #805480;
+}
+body {
+  background-color: black;
+}
+body {
+  margin: 20px;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: #050505;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+header img {
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+header {
+  background-color: var(--reading-background-color);
+  padding: 10px;
+}
+
+header img#logo {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+h1#page-title {
+  display: inline;
+}
+
+main {
+  background-color: var(--reading-background-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+aside {
+  background-color: var(--reading-background-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  background-color: hsl(36, 97%, 47%);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  border-radius: 10px
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Your Font Name", sans-serif;
+}
+
+h2 {
+  font-size: 1;
+  font-family: "Your Font Name", sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Your Font Name", sans-serif;
+}
+
+h4, h5, h6 {
+  font-size:  1.2rem;
+  font-family: "Your Font Name", sans-serif;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: "Welcome esteemed members", sans-serif;
+  padding: 10px;
+}
+
+nav {
+  background-color: var(--main-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
+  border: 2px solid #ce5e14dc;
+  background-color: var(--main-color);
+  width: 12%;
+}
+
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav li:hover {
+  background-color: rgb(37, 35, 35);
+}
+
+.active {
+  background-color: var(--interactive-feature-color);
+}
+
+table {
+  font-family: var(--main-font-family);
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+table td, table th {
+  border: 2px solid #000000;
+  padding: 10px;
+}
+
+th {
+  background-color: var(--main-color);
+  color: #e2d9d9;
+}
+
+table tr:nth-child(even) {
+  background-color: #eb830e;
+}
+
+#home-carousel .carousel-inner .carousel-item img {
+  width: 500px !important;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.gallery-img {
+  width: 100%;
+}
+
+#img-gallery {
+  padding-top: 10px;
+}
+
+#img-gallery .row {
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header-form form {
+  display: flex;
+}
+
+.header-form input {
+  margin: 0 5px;
+  padding: 0.9px;
+}
+.header-form {
+  position: absolute;
+  top: 70;
+  right: 0;
+  transform: translateY(100%);
+}
+.event-form {
+  margin-top: 20px;
+}
+
+.event-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.event-form input[type="text"],
+.event-form input[type="date"] {
+  margin-bottom: 10px;
+  width:15%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-top: -600px;
+  margin-right: -500px; /* Add this line */
+}
+.event-form button[type="submit"] {
+  margin-left: 10px;
+}
+.referenceLink {
+  color: rgb(7, 5, 5);
+}
+.innerContentText {
+  border: 25px solid rgb(29, 26, 26);
+}
+.login-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  background-color: rgba(61, 53, 53, 0.8);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--
+Threat Source: External 
+Threat Agent: Human
+ Threat Intention: Intentional
+ Threat Motivation: Spamming or phishing
+ Threat Impact: Overwhelming the inbox with spam or phishing emails, stealing user data Threat Mitigation: Implementing a CAPTCHA or a rate limiter, using email encryption, regularly monitoring and auditing email logs, educating users about phishing scams and other potential threats.
+-->
+
+    <!-- The title of the page is defined here -->
+    <title>Hoop Society</title>
+
+     <!-- The CSS file for the page is linked here -->
+    <link rel='stylesheet' href='css/main.css'>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+          <img src="images/e358c8e2d9b883bcb6aac95b46d04d08.jpg" alt="Hoop Society Image" style="margin-right: 10px;">
+          <h1>Hoop Society</h1>
+        </div>
+      </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="img_gallery.html">Gallery</a></li>
+             <li><a href="current_members.html">Members</a></li>
+              <li><a href="event_calendar.html">Events</a></li>
+               <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="resourses.html">Resourses</a></li>
+                 <li><a href="recommendations.html">Recommendations</a></li>
+        </ul>
+    </nav>
+    <main>
+
+         <!-- The main content of the page is defined here -->
+        <h2>Contact Us</h2>
+        <div>
+            <p>Please fill out the following form to contact Hoop Society:</p>
+            <form>
+
+                <!-- The name input field is defined here -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                  <!-- The email input field is defined here -->
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                 <!-- The membership select field is defined here -->
+                <label for="membership">Membership Status:</label><br>
+                <select id="membership" name="membership">
+                    <option value="member">Member</option>
+                    <option value="non-member">Non-Member</option>
+                </select><br>
+
+                <!-- The details textarea field is defined here -->
+                <label for="details">Details:</label><br>
+                <textarea id="details" name="details"></textarea><br>
+
+                 <!-- The file attachments input field is defined here -->
+                <label for="attachments">File Attachments:</label><br>
+                <input type="file" id="attachments" name="attachments" multiple><br>
+                
+                 <!-- The submit button is defined here -->
+                <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
+            </form>
+            <div>
+                <p id="form_outcome"></p>
+            </div>
+        </div>
+    </main>
+    <aside>
+        
+    </aside>
+    <footer>
+        
+    </footer>
+    <footer>
+        <p>Copyright Artem Rokhman 2024</p>
+    </footer>
+</body>
+</html>
